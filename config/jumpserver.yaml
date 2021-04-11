@@ -1,0 +1,33 @@
+version: "1.0.0"
+env: "dev"
+httpd:
+  host: "0.0.0.0"
+  port: 8010
+sshd:
+  host: "0.0.0.0"
+  port: 22
+recordDir: "/data/records/"
+linuxUser: "root"
+poolNum: 100
+log:
+  dir: "/tmp/logs"
+  name: "jumpserver.log"
+  format: ""
+  retainDay: 3
+  Level: "INFO"
+
+mysql:
+  dbjump:
+    host: "127.0.0.1"
+    port: 3306
+    db: "jumpserver"
+    user: "root"
+    password: "123456"
+    charset: "utf8"
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  maxIdle: 3
+  maxActive: 5
+  idleTimeout: 60

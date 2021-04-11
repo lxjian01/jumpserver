@@ -1,0 +1,7 @@
+.git
+.idea
+distribute
+config/test/*
+config/prod/*
+jumpserver
+jumpserver.lock
